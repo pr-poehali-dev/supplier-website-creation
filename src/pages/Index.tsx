@@ -81,10 +81,12 @@ const Index = () => {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-white rounded-2xl shadow-2xl p-8 border">
-                <div className="flex items-center justify-center mb-6">
-                  <Icon name="Factory" className="h-16 w-16 text-blue-600" />
-                </div>
+              <div className="bg-white rounded-2xl shadow-2xl p-8 border overflow-hidden">
+                <img
+                  src="/img/bd1fdd55-47e0-4773-9cc6-e7d3e68d295c.jpg"
+                  alt="Современное промышленное оборудование"
+                  className="w-full h-48 object-cover rounded-lg mb-6"
+                />
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">
                     Быстрая поставка
@@ -133,12 +135,89 @@ const Index = () => {
               Работаем с ведущими мировыми брендами промышленного оборудования
             </p>
           </div>
-          <div className="bg-gray-50 rounded-2xl p-8">
-            <img
-              src="https://cdn.poehali.dev/files/77a618ad-66f5-435b-8dad-6ffc6cd06d5a.jpg"
-              alt="Бренды партнеры"
-              className="w-full h-auto rounded-lg"
-            />
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+            <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6 flex items-center justify-center border">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-blue-600 mb-1">AB</div>
+                <div className="text-xs text-gray-600">Allen-Bradley</div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6 flex items-center justify-center border">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-red-600 mb-1">ABB</div>
+                <div className="text-xs text-gray-600">Automation</div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6 flex items-center justify-center border">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-yellow-600 mb-1">
+                  FANUC
+                </div>
+                <div className="text-xs text-gray-600">Robotics</div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6 flex items-center justify-center border">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-blue-500 mb-1">
+                  SICK
+                </div>
+                <div className="text-xs text-gray-600">Sensors</div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6 flex items-center justify-center border">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-blue-700 mb-1">
+                  Lenze
+                </div>
+                <div className="text-xs text-gray-600">Drives</div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6 flex items-center justify-center border">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-green-600 mb-1">SE</div>
+                <div className="text-xs text-gray-600">Schneider</div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6 flex items-center justify-center border">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-teal-600 mb-1">S</div>
+                <div className="text-xs text-gray-600">Siemens</div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6 flex items-center justify-center border">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-orange-600 mb-1">
+                  BH
+                </div>
+                <div className="text-xs text-gray-600">Beckhoff</div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6 flex items-center justify-center border">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-blue-800 mb-1">YW</div>
+                <div className="text-xs text-gray-600">Yokogawa</div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6 flex items-center justify-center border">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-purple-600 mb-1">
+                  HH
+                </div>
+                <div className="text-xs text-gray-600">Heidenhain</div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6 flex items-center justify-center border">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-red-700 mb-1">SEW</div>
+                <div className="text-xs text-gray-600">Eurodrive</div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6 flex items-center justify-center border">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-red-600 mb-1">M</div>
+                <div className="text-xs text-gray-600">Mitsubishi</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -155,11 +234,16 @@ const Index = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="text-center hover:shadow-lg transition-shadow border-0 shadow-md">
+            <Card className="text-center hover:shadow-lg transition-shadow border-0 shadow-md overflow-hidden">
+              <div className="relative">
+                <img
+                  src="/img/f8dbf9d2-3fde-4171-a4e3-017248b931f5.jpg"
+                  alt="Быстрая поставка оборудования"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="absolute inset-0 bg-blue-600 bg-opacity-20"></div>
+              </div>
               <CardHeader>
-                <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Clock" className="h-8 w-8 text-blue-600" />
-                </div>
                 <CardTitle className="text-xl">Быстрая поставка</CardTitle>
                 <CardDescription className="text-base">
                   Импортное оборудование всех брендов от 7 дней. Прямые поставки
@@ -167,11 +251,16 @@ const Index = () => {
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow border-0 shadow-md">
+            <Card className="text-center hover:shadow-lg transition-shadow border-0 shadow-md overflow-hidden">
+              <div className="relative">
+                <img
+                  src="/img/2c61fe2b-76f4-4895-a4e1-0ec8ce1464cb.jpg"
+                  alt="Гарантия качества и сертификация"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="absolute inset-0 bg-green-600 bg-opacity-20"></div>
+              </div>
               <CardHeader>
-                <div className="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Shield" className="h-8 w-8 text-green-600" />
-                </div>
                 <CardTitle className="text-xl">Гарантия качества</CardTitle>
                 <CardDescription className="text-base">
                   Все оборудование сертифицировано и имеет официальную гарантию
@@ -179,11 +268,16 @@ const Index = () => {
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow border-0 shadow-md">
+            <Card className="text-center hover:shadow-lg transition-shadow border-0 shadow-md overflow-hidden">
+              <div className="relative">
+                <img
+                  src="/img/bd1fdd55-47e0-4773-9cc6-e7d3e68d295c.jpg"
+                  alt="Техническая поддержка"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="absolute inset-0 bg-purple-600 bg-opacity-20"></div>
+              </div>
               <CardHeader>
-                <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Users" className="h-8 w-8 text-purple-600" />
-                </div>
                 <CardTitle className="text-xl">Техподдержка</CardTitle>
                 <CardDescription className="text-base">
                   Консультации по подбору оборудования и техническая поддержка
