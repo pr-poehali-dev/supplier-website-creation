@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -11,8 +12,14 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import Icon from "@/components/ui/icon";
+import ContactForm from "@/components/ContactForm";
 
 const Index = () => {
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
+  const openForm = () => setIsFormOpen(true);
+  const closeForm = () => setIsFormOpen(false);
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -45,7 +52,7 @@ const Index = () => {
               >
                 Контакты
               </a>
-              <Button className="bg-blue-600 hover:bg-blue-700">
+              <Button onClick={openForm} className="bg-blue-600 hover:bg-blue-700">
                 Запросить КП
               </Button>
             </nav>
@@ -70,11 +77,11 @@ const Index = () => {
                 Быстрая доставка, гарантия качества, техническая поддержка.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                <Button onClick={openForm} size="lg" className="bg-blue-600 hover:bg-blue-700">
                   Получить коммерческое предложение
                   <Icon name="ArrowRight" className="ml-2 h-4 w-4" />
                 </Button>
-                <Button size="lg" variant="outline">
+                <Button onClick={openForm} size="lg" variant="outline">
                   <Icon name="Phone" className="mr-2 h-4 w-4" />
                   Позвонить
                 </Button>
@@ -399,7 +406,7 @@ const Index = () => {
                       className="mt-1 min-h-[100px]"
                     />
                   </div>
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-lg py-3">
+                  <Button onClick={openForm} className="w-full bg-blue-600 hover:bg-blue-700 text-lg py-3">
                     <Icon name="Send" className="mr-2 h-5 w-5" />
                     Отправить заявку
                   </Button>
@@ -457,6 +464,8 @@ const Index = () => {
           </div>
         </div>
       </footer>
+      
+      <ContactForm isOpen={isFormOpen} onClose={closeForm} />
     </div>
   );
 };
